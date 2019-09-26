@@ -9,8 +9,8 @@ export default {
 
   function addNavItem(api){
     api.addNavigationBarItem({
-      name: "Users",
-      displayName: "Users",
+      name: "Members",
+      displayName: "Members",
       href: "/users",
       filterMode: 'users'
     });
