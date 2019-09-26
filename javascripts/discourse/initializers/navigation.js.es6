@@ -1,4 +1,5 @@
 import { withPluginApi } from 'discourse/lib/plugin-api';
+
 export default {
     name: 'alert',
     initialize() {
@@ -7,12 +8,10 @@ export default {
   };
 
   function addNavItem(api){
-
     api.addNavigationBarItem({
-        name:"Latest topics",
-        displayName: "Latest top",
-        href: "/latest",
-        customFilter: (category, args, router) => {if(router == 'users.index'){return true;} return false;}
+      name: "Users",
+      displayName: "Users",
+      href: "/users",
+      filterMode: 'users'
     });
-
   }
